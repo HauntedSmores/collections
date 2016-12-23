@@ -7,3 +7,45 @@ a:focus {
     color: $white;
     text-decoration: none;
 }
+
+.bttn-default {
+    position: relative;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-style: solid;
+    background-color: transparent;
+    transition: all 0.3s;
+    overflow: hidden;
+    &.navy {
+        border-color: $navy;
+        color: $navy;
+        &:before {
+            position: absolute;
+            content: "";
+            padding: 30px 15px;
+            color: $navy;
+            width: calc(100% + 30px);
+            height: 100%;
+            background-color: $coral;
+            top: 0;
+            left: calc(100% + 15px);
+            transform: skew(-20deg);
+            transition: all 0.5s;
+        }
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 15px 30px;
+            content: attr(data-text);
+        }
+        &:hover {
+            border-color: $coral;
+            &:before {
+                left: -15px;
+            }
+        }
+    }
+}
