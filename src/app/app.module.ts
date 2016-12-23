@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import {routing} from './app.routing';
 
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponentComponent } from './landing-component/landing-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
     LoginComponent,
     LandingComponentComponent
   ],
