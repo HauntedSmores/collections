@@ -2,4 +2,27 @@
 nav.main {
     height: 80px;
     background-color: $navy;
+    @include shadow;
+    ul {
+        float: right;
+        height: 100%;
+        li {
+            display: block;
+            float: left;
+            transform: skew(-20deg);
+            border-right: 2px solid $white;
+            &:first-child {
+                border-left: 2px solid $white;
+            }
+            &:last-child {
+                margin-right: 30px;
+            }
+            a {
+                display: block;
+                line-height: 80px;
+                padding: 0 30px;
+                transform: skew(20deg);
+            }
+        }
+    }
 }

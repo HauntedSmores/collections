@@ -1,2 +1,9 @@
-@import 'variables';
-@import 'mixins';
+@import './variables';
+@import './mixins';
+a,
+a:hover,
+a:link,
+a:focus {
+    color: $white;
+    text-decoration: none;
+}
