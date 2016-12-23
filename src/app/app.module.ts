@@ -7,11 +7,13 @@ import {routing} from './app.routing';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { LandingComponentComponent } from './landing-component/landing-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    LandingComponentComponent
   ],
   imports: [
     BrowserModule,
