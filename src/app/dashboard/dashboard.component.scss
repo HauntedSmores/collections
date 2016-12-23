@@ -1,26 +1,20 @@
 @import '../../assets/scss/common/base';
-
-div.container {
-    height: 600px;
-    background-color: $blue; 
+.sidebar {
+    height: 400px;
+    background-color: $blue;
     @include shadow;
-    div.col-md-10 {
-        margin-top: 30px;
-        @include shadow;
-        background-color: $light-blue;
-        height: 60px;
-    }
-    div.col-md-3 {
-        margin-top: 60px;
-        // margin-bottom: auto 0;
-        @include shadow;
-        background-color: $light-blue;
-        height: 300px;
-    }
-    div.col-md-3:first-child {
-        margin-left: 45px;
-    }
-    div.col-md-10:last-child {
-        margin-top: 45px;
-    }
+}
+
+.main-panel {
+    height: 600px;
+    background-color: $light-blue;
+    @include shadow;
+    margin-bottom: 45px;
+}
+
+.collection {
+    height: 800px;
+    background-color: $coral;
+    @include shadow;
+    margin-bottom: 45px;
 }
